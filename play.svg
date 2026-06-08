@@ -1,0 +1,7 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Circle border (black stroke) -->
+  <circle cx="24" cy="24" r="23" fill="none" stroke="black" stroke-width="1.5"/>
+  
+  <!-- Play button (black stroke) -->
+  <path d="M18 32V16L32 24L18 32Z" stroke="black" stroke-width="1.5" stroke-linejoin="round"/>
+</svg>

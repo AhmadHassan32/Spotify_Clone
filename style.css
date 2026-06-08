@@ -1,0 +1,331 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto','Times New Roman', Times, serif;
+}
+body{
+    background-color: black;
+}
+.container{
+    height: 154vh;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: black;
+    display: flex;
+    
+    /* justify-content: space-between; */
+    gap: 10px;
+    padding-left: 10px;
+}
+.left{
+    /* background-color: rgb(18, 17, 17); */
+    color: white;
+    width: 24vw;
+    height: 154vh;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.ltop{
+    
+    height: 17vh;
+    background-color: #121212;
+    padding-left: 10px;
+    padding-top: 10px;
+    /* line-height: 30px; */
+}
+.lbottom{
+    
+    
+    height: calc(154vh - 17vh - 10px);
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+}
+
+.ltop > img{
+    filter: invert();
+    
+    width: 110px;
+}
+.home{
+    display: flex;
+    margin-top: 10px;
+    font-weight: bolder;
+    gap: 10px;
+}
+.home > img{
+    filter: invert();
+    width: 15px;
+}
+.search{
+    display: flex;
+    margin-top: 15px;
+    font-weight: bolder;
+    gap: 10px;
+    
+}
+.search > img{
+    filter: invert();
+    width: 15px;
+}
+.library{
+    display: flex;
+    margin-top: 30px;
+    margin-left: 20px;
+    align-items: center;
+    gap: 15px;
+    font-weight: bolder;
+    font-size: larger;
+}
+.library img{
+    width: 30px;
+    filter: invert();
+    
+}
+.info{
+    margin-top: auto;
+    margin-bottom: 5px;
+    display: flex;
+    
+    justify-content: space-evenly;
+    
+    align-items: center;
+    
+}
+
+.info a{
+    color: gray;
+    font-size: 12px;
+}
+
+
+.right{
+    background-color: #121212;
+    color: white;
+    width: calc(76vw - 20px ); 
+    height: 154vh;
+    
+    display: flex;
+    flex-direction: column;
+    /* margin-right: auto; */
+    
+}
+.right > h1{
+    margin-top:20px ;
+    margin-left:20px ;
+    
+}
+
+/* .play{
+    
+    filter: invert(1);
+    background: #e2d9d9;
+    height: 100px;
+  
+    margin-left: 15px;
+    margin-right: 15px;
+
+    border-radius: 10px;
+    position: sticky;
+    top: 81vh;
+    z-index: 1000;
+} */
+
+
+/*
+.play {
+  position: fixed;
+  bottom: 30px; 
+   left: calc(24vw + 20px + 10px );  
+  right: 10px;
+  width: calc(76vw - 20px - 20px ); 
+  height: 100px;
+  background: #e2d9d9;
+  filter: invert(1);
+  border-radius: 10px;
+  z-index: 1000;
+}
+*/
+
+.nav{
+    height: 90px;
+    background-color: rgb(34 34 34);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.navbuttons{
+    display: flex;
+    align-items: center;
+    /* border: 2px solid white; */
+    gap: 20px;
+    font-weight: bolder;
+    color: gray;
+    font-size: large;
+}
+.navbuttons button{
+    background-color: white;
+    border-radius: 21px;
+    color: black;
+    padding: 10px;
+    width: 79px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.arrows{
+    display: flex;
+    gap: 0.9vw;
+}
+
+.play {
+  position: fixed;
+  bottom: 30px;
+
+  /* This places .play exactly 10px inside the .right box */
+  left: calc(24vw + 10px + 10px + 5px);   /* left width + container padding + gap */
+  right: 10px; /* 10px from screen's right edge */
+
+  height: 100px;
+  background: #e2d9d9;
+  filter: invert(1);
+  border-radius: 10px;
+  z-index: 1000;
+
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+.abovebar{
+    display: flex;
+    justify-content: space-between;
+     
+     position: relative;
+     padding: 0 10px;
+     height: 40%;
+}
+
+#duration{
+    color: #121212;
+    
+    display: flex;
+    align-items: center;
+
+}
+ #songname{
+    color: #121212;
+    
+    /* width: 20%; */
+display: flex;
+align-items: center;
+
+  }
+
+
+.playicons{
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+ 
+
+}
+.playicons img{
+    width: 30px;
+}
+
+
+
+.belowbar{
+    filter: invert();
+    margin: 0px 1% 0px 1%;
+    position: relative;
+    
+}
+
+.seekbar{
+   
+    height: 8px;
+    width: 100%;
+    background-color: orange
+}
+.circle{
+    background-color: aliceblue;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    position: absolute;
+    left: 0%;
+    bottom: -3px;
+}
+.songsbar{
+    /* border: 2px solid white; */
+    margin: 20px 10px;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: auto;
+}
+
+  .songdiv{
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    border: 2px solid gray;
+    padding: 5px;
+    
+
+}
+.songdiv p{
+    width: 15vw;
+    display: flex;
+    justify-content: center ;
+    /* border: 2px solid orange; */
+    /* text-align: center; */
+   
+}
+.songdiv img{
+    width: 30px;
+    filter: invert();
+}
+
+/* For Webkit browsers (e.g., Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #333; /* Dark color for the thumb */
+    border-radius: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #222; /* Dark color for the track */
+  }
+  
+  /* For Firefox */
+   /* Dark color for the thumb and track in Firefox */
+  
